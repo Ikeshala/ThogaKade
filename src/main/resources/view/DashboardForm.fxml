@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="545.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <ImageView fx:id="pane" fitHeight="556.0" fitWidth="823.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img_13.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="42.0" layoutY="46.0" opacity="0.75" prefHeight="457.0" prefWidth="739.0" style="-fx-background-color: BLACK; -fx-background-radius: 10;">
+         <children>
+            <AnchorPane blendMode="HARD_LIGHT" prefHeight="60.0" prefWidth="739.0" style="-fx-background-color: #4A403A; -fx-background-radius: 10;">
+               <children>
+                  <Label alignment="CENTER" blendMode="SRC_ATOP" contentDisplay="CENTER" layoutX="277.0" layoutY="13.0" text="Thoga Kade" textAlignment="CENTER" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Showcard Gothic" size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView blendMode="ADD" fitHeight="50.0" fitWidth="40.0" layoutX="685.0" layoutY="13.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_8.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView blendMode="ADD" fitHeight="50.0" fitWidth="40.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_33.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnCustomers" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="91.0" onAction="#CustomersButtonOnAction" prefHeight="55.0" prefWidth="200.0" ripplerFill="#f4ce14" style="-fx-border-color: #A9A9A9; -fx-border-radius: 10; -fx-background-color: BLACK;" text="Customers" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/iconizer-img_21.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="-1.0" saturation="-1.0" />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="btnOrders" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="245.0" onAction="#OrdersButtonOnAction" prefHeight="55.0" prefWidth="200.0" ripplerFill="#f75f28" style="-fx-border-color: #A9A9A9; -fx-border-radius: 10; -fx-background-color: BLACK;" text="Orders" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_5.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="-1.0" saturation="-1.0" />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="btnItems" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="169.0" onAction="#ItemsButtonOnAction" prefHeight="55.0" prefWidth="200.0" ripplerFill="#2a5df5" style="-fx-border-color: #A9A9A9; -fx-border-radius: 10; -fx-background-color: BLACK;" text="Items" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="50.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="-1.0" saturation="-1.0" />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="btnPlaceOrder" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="324.0" onAction="#PlaceOrderButtonOnAction" prefHeight="55.0" prefWidth="206.0" ripplerFill="#60bf2e" style="-fx-border-radius: 10; -fx-border-color: #A9A9A9; -fx-background-color: BLACK;" text="Place Order" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_8.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="1.0" hue="-1.0" saturation="-1.0" />
+               </effect>
+            </JFXButton>
+            <Label fx:id="lblDate" layoutX="98.0" layoutY="410.0" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="410.0" text="Date :  " textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="638.0" layoutY="418.0" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="596.0" layoutY="418.0" text="Time :  " textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="99.0" fitWidth="100.0" layoutX="562.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_35.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="100.0" layoutX="452.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_36.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="100.0" layoutX="547.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_37.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="100.0" layoutX="452.0" layoutY="94.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_38.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="100.0" layoutX="452.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_39.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="100.0" layoutX="547.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_43.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="100.0" layoutX="353.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_41.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="100.0" layoutX="353.0" layoutY="281.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/img_40.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

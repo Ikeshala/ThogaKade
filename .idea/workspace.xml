@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/tm/ItemsTm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/AdobeStock_209351942_Preview.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/NicePng_grocery-png_847295.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/ezgif.com-gif-maker.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8-search.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icons8-users.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_43.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_44.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/CustomerForm.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/DashboardForm.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/ItemsForm.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2YUMtXNamuaRCHeyUnYvOQyDURf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_directory_selection": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/java",
+    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/resources/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\images" />
+      <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\view" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.ThogaKade [javafx:run]">
+    <configuration name="AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppInitializer" />
+      <module name="ThogaKade" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThogaKade [javafx:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="javafx:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.AppInitializer" />
+      <item itemvalue="Maven.ThogaKade [javafx:run]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppInitializer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="" />
+      <created>1700573940298</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700573940298</updated>
+      <workItem from="1700573941472" duration="1943000" />
+      <workItem from="1700575921169" duration="209000" />
+      <workItem from="1700576140628" duration="8572000" />
+      <workItem from="1700594308173" duration="3069000" />
+      <workItem from="1700629531972" duration="26982000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

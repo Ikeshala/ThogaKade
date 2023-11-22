@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="545.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+   <children>
+      <ImageView fx:id="customerPane" fitHeight="556.0" fitWidth="823.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img_31.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="42.0" layoutY="46.0" opacity="0.82" prefHeight="457.0" prefWidth="739.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <AnchorPane blendMode="HARD_LIGHT" prefHeight="60.0" prefWidth="739.0" style="-fx-background-color: #164863; -fx-background-radius: 5;">
+               <children>
+                  <JFXButton fx:id="btnBack" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="14.0" layoutY="7.0" onAction="#BackButtonOnAction" prefHeight="39.0" prefWidth="38.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect>
+                     <graphic>
+                        <ImageView blendMode="DARKEN" fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/img_14.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label alignment="CENTER" blendMode="COLOR_BURN" contentDisplay="CENTER" layoutX="284.0" layoutY="13.0" text="Customers" textAlignment="CENTER" underline="true">
+                     <font>
+                        <Font name="Showcard Gothic" size="30.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust brightness="-1.0" contrast="1.0" />
+                     </effect>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="690.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/img_21.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="16.0" layoutY="178.0" text="Customer ID">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCustomerID" blendMode="DIFFERENCE" focusColor="WHITE" layoutX="16.0" layoutY="196.0" prefHeight="29.0" prefWidth="165.0">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
+               </effect>
+               <tooltip>
+                  <Tooltip text="Enter customer ID here" />
+               </tooltip>
+            </JFXTextField>
+            <Label layoutX="16.0" layoutY="239.0" text="Customer Name">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCustomerName" blendMode="DIFFERENCE" focusColor="WHITE" layoutX="16.0" layoutY="258.0" prefHeight="29.0" prefWidth="165.0">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
+               </effect>
+               <tooltip>
+                  <Tooltip text="Enter customer name here" />
+               </tooltip>
+            </JFXTextField>
+            <Label layoutX="16.0" layoutY="302.0" text="Customer Address">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCustomerAddress" blendMode="DIFFERENCE" focusColor="WHITE" layoutX="16.0" layoutY="320.0" prefHeight="29.0" prefWidth="165.0">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
+               </effect>
+               <tooltip>
+                  <Tooltip text="Enter customer address here" />
+               </tooltip>
+            </JFXTextField>
+            <Label layoutX="16.0" layoutY="364.0" text="Customer Salary">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCustomerSalary" blendMode="DIFFERENCE" focusColor="WHITE" layoutX="16.0" layoutY="385.0" prefHeight="29.0" prefWidth="165.0">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
+               </effect>
+               <tooltip>
+                  <Tooltip text="Enter customer salary here" />
+               </tooltip>
+            </JFXTextField>
+            <JFXButton fx:id="btnRefresh" alignment="CENTER" blendMode="EXCLUSION" buttonType="RAISED" contentDisplay="CENTER" layoutX="524.0" layoutY="404.0" onAction="#RefreshButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color: B5592A;" text="REFRESH" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5833333333333334" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#685d5d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <AnchorPane layoutX="16.0" layoutY="79.0" prefHeight="76.0" prefWidth="165.0" style="-fx-border-color: BLACK; -fx-border-radius: 5;">
+               <children>
+                  <Label layoutX="23.0" layoutY="12.0" text="Search Customer">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtSearchCustomer" blendMode="DIFFERENCE" focusColor="WHITE" layoutX="23.0" layoutY="35.0" prefHeight="29.0" prefWidth="119.0">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Search customer here" />
+                     </tooltip>
+                  </JFXTextField>
+                  <ImageView fitHeight="31.0" fitWidth="23.0" layoutX="129.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-search.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnUpdate" alignment="CENTER" blendMode="EXCLUSION" buttonType="RAISED" contentDisplay="CENTER" layoutX="422.0" layoutY="404.0" onAction="#UpdateButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color: B5592A;" text="UPDATE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5833333333333334" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#685d5d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton fx:id="btnSave" alignment="CENTER" blendMode="EXCLUSION" buttonType="RAISED" contentDisplay="CENTER" layoutX="320.0" layoutY="404.0" onAction="#SaveButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color: B5592A;" text="SAVE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5833333333333334" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#685d5d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXTreeTableView fx:id="tblCustomers" layoutX="205.0" layoutY="81.0" prefHeight="309.0" prefWidth="519.0">
+               <columns>
+                  <TreeTableColumn fx:id="colCustomerID" prefWidth="86.0" text="Customer ID" />
+                  <TreeTableColumn fx:id="colCustomerName" prefWidth="120.0" text="Customer Name" />
+                  <TreeTableColumn fx:id="colCustomerAddress" prefWidth="120.0" text="Customer Address" />
+                  <TreeTableColumn fx:id="colCustomerSalary" prefWidth="105.0" text="Customer Salary" />
+                  <TreeTableColumn fx:id="colOption" prefWidth="86.0" text="Option" />
+               </columns>
+            </JFXTreeTableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
