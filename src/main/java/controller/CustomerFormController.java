@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.TreeTableColumn;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import dto.tm.CustomerTm;
 
 import java.io.IOException;
 
@@ -46,22 +47,26 @@ public class CustomerFormController {
     private JFXButton btnSave;
 
     @FXML
-    private JFXTreeTableView<?> tblCustomers;
+    private JFXTreeTableView<CustomerTm> tblCustomers;
 
     @FXML
-    private TreeTableColumn<?, ?> colCustomerID;
+    private TreeTableColumn colCustomerID;
 
     @FXML
-    private TreeTableColumn<?, ?> colCustomerName;
+    private TreeTableColumn colCustomerName;
 
     @FXML
-    private TreeTableColumn<?, ?> colCustomerAddress;
+    private TreeTableColumn colCustomerAddress;
 
     @FXML
-    private TreeTableColumn<?, ?> colCustomerSalary;
+    private TreeTableColumn colCustomerSalary;
 
     @FXML
-    private TreeTableColumn<?, ?> colOption;
+    private TreeTableColumn colOption;
+
+    public void initialize(){
+
+    }
 
     @FXML
     void BackButtonOnAction(ActionEvent event) {
