@@ -173,7 +173,9 @@ public class CustomerFormController {
 
     @FXML
     void RefreshButtonOnAction(ActionEvent event) {
-
+        loadCustomersTable();
+        tblCustomers.refresh();
+        clearFields();
     }
 
     @FXML

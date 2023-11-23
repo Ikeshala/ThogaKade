@@ -178,7 +178,9 @@ public class ItemsFormController {
 
     @FXML
     void RefreshButtonOnAction(ActionEvent event) {
-
+        loadItemsTable();
+        tblItems.refresh();
+        clearFields();
     }
 
     @FXML
