@@ -1,0 +1,53 @@
+package model.impl;
+
+import db.DBConnection;
+import dto.CustomersDto;
+import model.CustomerModel;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class CustomerModelImpl implements CustomerModel {
+    @Override
+    public boolean saveCustomer(CustomersDto dto) {
+        return false;
+    }
+
+    @Override
+    public boolean updateCustomer(CustomersDto dto) {
+        return false;
+    }
+
+    @Override
+    public boolean searchCustomer(String id) {
+        return false;
+    }
+
+    @Override
+    public boolean deleteCustomer(String id) {
+        return false;
+    }
+
+    @Override
+    public List<CustomersDto> allCustomers() throws SQLException, ClassNotFoundException {
+        List<CustomersDto> list = new ArrayList<>();
+        String sql = "SELECT * FROM customer";
+
+        PreparedStatement ptsm = DBConnection.getInstance().getConnection().prepareStatement(sql);
+        ResultSet resultSet = ptsm.executeQuery();
+
+            while (resultSet.next()) {
+                list.add(new CustomersDto(
+                        resultSet.getString(1),
+                        resultSet.getString(2),
+                        resultSet.getString(3),
+                        resultSet.getDouble(4)
+                ));
+            }
+
+        return list;
+    }
+}

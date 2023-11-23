@@ -25,9 +25,12 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
+import model.CustomerModel;
+import model.impl.CustomerModelImpl;
 
 import java.io.IOException;
 import java.sql.*;
+import java.util.List;
 
 public class CustomerFormController {
 
@@ -78,6 +81,7 @@ public class CustomerFormController {
 
     @FXML
     private TreeTableColumn colOption;
+    private CustomerModel customerModel = new CustomerModelImpl();
 
     public void initialize(){
         colCustomerID.setCellValueFactory(new TreeItemPropertyValueFactory<>("id"));
@@ -89,13 +93,11 @@ public class CustomerFormController {
     }
     private void loadCustomersTable() {
         ObservableList<CustomerTm> tmList = FXCollections.observableArrayList();
-        String sql = "SELECT * FROM customer";
 
         try {
-            Statement statement = DBConnection.getInstance().getConnection().createStatement();
-            ResultSet resultSet = statement.executeQuery(sql);
+            List<CustomersDto> dtoList = customerModel.allCustomers();
 
-            while (resultSet.next()){
+            for (CustomersDto dto : dtoList) {
                 JFXButton button = new JFXButton("DELETE");
                 button.setFont(Font.font("System", FontWeight.BOLD, 13));
                 button.setButtonType(JFXButton.ButtonType.RAISED);
@@ -103,22 +105,43 @@ public class CustomerFormController {
                 button.setTextAlignment(TextAlignment.CENTER);
                 button.setTextFill(Color.WHITE);
                 button.setStyle("-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color:  #B5592A;");
-                CustomerTm customerTm = new CustomerTm(resultSet.getString(1),
-                        resultSet.getString(2),
-                        resultSet.getString(3),
-                        resultSet.getDouble(4),
+
+                CustomerTm customerTm = new CustomerTm(
+                        dto.getId(),
+                        dto.getName(),
+                        dto.getAddress(),
+                        dto.getSalary(),
                         button
                 );
 
                 button.setOnAction(actionEvent -> {
-                    // deleteItem(itemsTm.getCode());
+                    deleteCustomer(customerTm.getId());
                 });
 
                 tmList.add(customerTm);
             }
-            TreeItem<CustomerTm> treeItem = new RecursiveTreeItem<CustomerTm>(tmList, RecursiveTreeObject::getChildren);
+            TreeItem<CustomerTm> treeItem = new RecursiveTreeItem<>(tmList, RecursiveTreeObject::getChildren);
             tblCustomers.setRoot(treeItem);
             tblCustomers.setShowRoot(false);
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void deleteCustomer(String id) {
+        String sql = "DELETE FROM customer WHERE id=?";
+
+        try {
+            PreparedStatement pstm = DBConnection.getInstance().getConnection().prepareStatement(sql);
+            pstm.setString(1, id);
+            int result = pstm.executeUpdate();
+
+            if (result > 0) {
+                new Alert(Alert.AlertType.INFORMATION, "Item Deleted!").show();
+                loadCustomersTable();
+            } else {
+                new Alert(Alert.AlertType.ERROR, "Something went wrong!").show();
+            }
 
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
@@ -159,7 +182,7 @@ public class CustomerFormController {
             int result = pstm.executeUpdate();
             if (result>0){
                 new Alert(Alert.AlertType.INFORMATION,"Customer Saved!").show();
-                //loadItemTable();
+                loadCustomersTable();
             }
 
         } catch (SQLIntegrityConstraintViolationException ex){

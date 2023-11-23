@@ -6,7 +6,9 @@ import com.jfoenix.controls.JFXTreeTableView;
 import com.jfoenix.controls.RecursiveTreeItem;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import db.DBConnection;
+import dto.CustomersDto;
 import dto.ItemsDto;
+import dto.tm.CustomerTm;
 import dto.tm.ItemsTm;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -27,9 +29,12 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 import dto.tm.ItemsTm;
+import model.ItemModel;
+import model.impl.ItemModelImpl;
 
 import java.io.IOException;
 import java.sql.*;
+import java.util.List;
 
 public class ItemsFormController {
 
@@ -80,6 +85,7 @@ public class ItemsFormController {
 
     @FXML
     private TreeTableColumn colOption;
+    private ItemModel itemModel = new ItemModelImpl();
 
     public void initialize(){
         colItemCode.setCellValueFactory(new TreeItemPropertyValueFactory<>("code"));
@@ -92,36 +98,55 @@ public class ItemsFormController {
 
     private void loadItemsTable() {
         ObservableList<ItemsTm> tmList = FXCollections.observableArrayList();
-        String sql = "SELECT * FROM item";
 
         try {
-            Statement statement = DBConnection.getInstance().getConnection().createStatement();
-            ResultSet resultSet = statement.executeQuery(sql);
+            List<ItemsDto> dtoList = itemModel.allItems();
 
-            while (resultSet.next()){
+            for (ItemsDto dto : dtoList) {
                 JFXButton button = new JFXButton("DELETE");
                 button.setFont(Font.font("System", FontWeight.BOLD, 13));
                 button.setButtonType(JFXButton.ButtonType.RAISED);
                 button.setBlendMode(BlendMode.EXCLUSION);
                 button.setTextAlignment(TextAlignment.CENTER);
                 button.setTextFill(Color.WHITE);
-                button.setStyle("-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color: #45474B;");
-                ItemsTm itemsTm = new ItemsTm(resultSet.getString(1),
-                        resultSet.getString(2),
-                        resultSet.getDouble(3),
-                        resultSet.getInt(4),
+                button.setStyle("-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color:  #B5592A;");
+
+                ItemsTm itemsTm = new ItemsTm(
+                        dto.getCode(),
+                        dto.getDescription(),
+                        dto.getUnitPrice(),
+                        dto.getQuantity(),
                         button
                 );
 
                 button.setOnAction(actionEvent -> {
-                   // deleteItem(itemsTm.getCode());
+                    deleteItem(itemsTm.getCode());
                 });
 
                 tmList.add(itemsTm);
             }
-            TreeItem<ItemsTm> treeItem = new RecursiveTreeItem<ItemsTm>(tmList, RecursiveTreeObject::getChildren);
+            TreeItem<ItemsTm> treeItem = new RecursiveTreeItem<>(tmList, RecursiveTreeObject::getChildren);
             tblItems.setRoot(treeItem);
             tblItems.setShowRoot(false);
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void deleteItem(String code) {
+        String sql = "DELETE FROM item WHERE code=?";
+
+        try {
+            PreparedStatement pstm = DBConnection.getInstance().getConnection().prepareStatement(sql);
+            pstm.setString(1, code);
+            int result = pstm.executeUpdate();
+
+            if (result > 0) {
+                new Alert(Alert.AlertType.INFORMATION, "Item Deleted!").show();
+                loadItemsTable();
+            } else {
+                new Alert(Alert.AlertType.ERROR, "Something went wrong!").show();
+            }
 
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
@@ -162,7 +187,7 @@ public class ItemsFormController {
             int result = pstm.executeUpdate();
             if (result>0){
                 new Alert(Alert.AlertType.INFORMATION,"Item Saved!").show();
-                //loadItemTable();
+                loadItemsTable();
             }
 
         } catch (SQLIntegrityConstraintViolationException ex){

@@ -1,25 +1,18 @@
-/*#tblCustomers {*/
-/*    -fx-font-weight: bold;*/
-/*    -fx-text-fill: black;*/
-/*}*/
-
 .table-view {
-    -fx-font-weight: bold; /* Set font weight to bold for the table content */
-    -fx-border-width: 1; /* Set border width */
-    -fx-border-color: black; /* Set border color */
+    -fx-font-weight: bold;
+    -fx-border-width: 1;
+    -fx-border-color: black;
 }
 
-/* Style for JFXTreeTableView header */
 .column-header {
-    -fx-font-weight: bold; /* Set font weight to bold for the header */
-    -fx-text-fill: black; /* Set font color to black for the header */
-    -fx-min-height: 25; /* Set the header height */
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-min-height: 25;
 }
 
-/* Style for JFXTreeTableColumn cells */
 .table-cell {
-    -fx-font-weight: bold; /* Set font weight to bold for the cells */
-    -fx-text-fill: black; /* Set font color to black for the cells */
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
 }
 
 #tblCustomers.table-row-cell:selected{
