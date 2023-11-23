@@ -62,7 +62,7 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <JFXTextField fx:id="txtCustomerID" blendMode="DIFFERENCE" focusColor="WHITE" layoutX="16.0" layoutY="196.0" prefHeight="29.0" prefWidth="165.0">
+            <JFXTextField fx:id="txtCustomerID" blendMode="DIFFERENCE" focusColor="WHITE" layoutX="16.0" layoutY="196.0" prefHeight="29.0" prefWidth="165.0" unFocusColor="#d0c4c4">
                <font>
                   <Font name="System Italic" size="13.0" />
                </font>
@@ -121,7 +121,7 @@
                   <Tooltip text="Enter customer salary here" />
                </tooltip>
             </JFXTextField>
-            <JFXButton fx:id="btnRefresh" alignment="CENTER" blendMode="EXCLUSION" buttonType="RAISED" contentDisplay="CENTER" layoutX="524.0" layoutY="404.0" onAction="#RefreshButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color: B5592A;" text="REFRESH" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="btnRefresh" alignment="CENTER" blendMode="EXCLUSION" buttonType="RAISED" contentDisplay="CENTER" layoutX="524.0" layoutY="404.0" onAction="#RefreshButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color: #B5592A;" text="REFRESH" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Leelawadee UI Bold" size="14.0" />
                </font>
@@ -159,7 +159,7 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <JFXButton fx:id="btnUpdate" alignment="CENTER" blendMode="EXCLUSION" buttonType="RAISED" contentDisplay="CENTER" layoutX="422.0" layoutY="404.0" onAction="#UpdateButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color: B5592A;" text="UPDATE" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="btnUpdate" alignment="CENTER" blendMode="EXCLUSION" buttonType="RAISED" contentDisplay="CENTER" layoutX="422.0" layoutY="404.0" onAction="#UpdateButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color: #B5592A;" text="UPDATE" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Leelawadee UI Bold" size="14.0" />
                </font>
@@ -172,7 +172,7 @@
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXButton fx:id="btnSave" alignment="CENTER" blendMode="EXCLUSION" buttonType="RAISED" contentDisplay="CENTER" layoutX="320.0" layoutY="404.0" onAction="#SaveButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color: B5592A;" text="SAVE" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="btnSave" alignment="CENTER" blendMode="EXCLUSION" buttonType="RAISED" contentDisplay="CENTER" layoutX="320.0" layoutY="404.0" onAction="#SaveButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color: #B5592A;" text="SAVE" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Leelawadee UI Bold" size="14.0" />
                </font>
@@ -185,13 +185,13 @@
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXTreeTableView fx:id="tblCustomers" layoutX="205.0" layoutY="81.0" prefHeight="309.0" prefWidth="519.0">
+            <JFXTreeTableView id="#tblCustomers" fx:id="tblCustomers" layoutX="205.0" layoutY="79.0" prefHeight="311.0" prefWidth="519.0" style="-fx-selection-bar: #B5592A; -fx-font-weight: BOLD;" styleClass="table-row-cell:selected" stylesheets="@style.css">
                <columns>
-                  <TreeTableColumn fx:id="colCustomerID" prefWidth="86.0" text="Customer ID" />
-                  <TreeTableColumn fx:id="colCustomerName" prefWidth="120.0" text="Customer Name" />
-                  <TreeTableColumn fx:id="colCustomerAddress" prefWidth="120.0" text="Customer Address" />
-                  <TreeTableColumn fx:id="colCustomerSalary" prefWidth="105.0" text="Customer Salary" />
-                  <TreeTableColumn fx:id="colOption" prefWidth="86.0" text="Option" />
+                  <TreeTableColumn fx:id="colCustomerID" prefWidth="79.0" text="Customer ID" />
+                  <TreeTableColumn fx:id="colCustomerName" prefWidth="117.0" text="Customer Name" />
+                  <TreeTableColumn fx:id="colCustomerAddress" prefWidth="123.0" text="Customer Address" />
+                  <TreeTableColumn fx:id="colCustomerSalary" prefWidth="104.0" text="Customer Salary" />
+                  <TreeTableColumn fx:id="colOption" prefWidth="84.0" text="Option" />
                </columns>
             </JFXTreeTableView>
          </children>

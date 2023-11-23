@@ -59,6 +59,9 @@ public class DashboardFormController {
         Stage stage = (Stage) pane.getScene().getWindow();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CustomerForm.fxml"))));
+            stage.centerOnScreen();
+            stage.setResizable(false);
+            stage.setTitle("Customers Form");
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
@@ -70,6 +73,9 @@ public class DashboardFormController {
         Stage stage = (Stage) pane.getScene().getWindow();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ItemsForm.fxml"))));
+            stage.centerOnScreen();
+            stage.setResizable(false);
+            stage.setTitle("Items Form");
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();

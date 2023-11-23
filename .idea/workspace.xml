@@ -4,15 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Completed UIs for Dashboard, Customers and Items.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/Customers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/tm/CustomerTm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/tm/ItemsTm.java" afterDir="false" />
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="DBConnection with singleton design pattern">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DashboardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/Items.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tm/ItemsTm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/CustomersDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ItemsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/tm/CustomerTm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/tm/CustomerTm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/tm/ItemsTm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/tm/ItemsTm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/CustomerForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/CustomerForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/DashboardForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/DashboardForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ItemsForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ItemsForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +67,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -140,7 +147,8 @@
       <workItem from="1700576140628" duration="8572000" />
       <workItem from="1700594308173" duration="3069000" />
       <workItem from="1700629531972" duration="28147000" />
-      <workItem from="1700669529847" duration="1153000" />
+      <workItem from="1700669529847" duration="11898000" />
+      <workItem from="1700714414449" duration="12328000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -150,7 +158,39 @@
       <option name="project" value="LOCAL" />
       <updated>1700665357258</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Change MVC">
+      <option name="closed" value="true" />
+      <created>1700670743363</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700670743363</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Change MVC">
+      <option name="closed" value="true" />
+      <created>1700670932682</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700670932682</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Change MVC">
+      <option name="closed" value="true" />
+      <created>1700671017464</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700671017464</updated>
+    </task>
+    <task id="LOCAL-00005" summary="DBConnection with singleton design pattern">
+      <option name="closed" value="true" />
+      <created>1700674162637</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700674162637</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +209,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed UIs for Dashboard, Customers and Items." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed UIs for Dashboard, Customers and Items." />
+    <MESSAGE value="Change MVC" />
+    <MESSAGE value="DBConnection with singleton design pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="DBConnection with singleton design pattern" />
   </component>
 </project>

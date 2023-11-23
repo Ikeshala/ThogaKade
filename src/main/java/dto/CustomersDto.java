@@ -1,7 +1,6 @@
-package dto.tm;
+package dto;
 
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import lombok.*;
 
 @ToString
@@ -9,14 +8,14 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CustomerTm extends RecursiveTreeObject<CustomerTm> {
+public class CustomersDto {
     private String id;
     private String name;
     private String address;
     private double salary;
     private JFXButton btn;
 
-    public CustomerTm(String id, String name, String address, double salary) {
+    public CustomersDto(String id, String name, String address, double salary) {
         this.id = id;
         this.name = name;
         this.address = address;

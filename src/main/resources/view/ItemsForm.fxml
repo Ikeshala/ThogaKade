@@ -185,13 +185,13 @@
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXTreeTableView fx:id="tblItems" layoutX="205.0" layoutY="81.0" prefHeight="309.0" prefWidth="519.0">
+            <JFXTreeTableView id="#tblItems" fx:id="tblItems" layoutX="205.0" layoutY="81.0" prefHeight="309.0" prefWidth="519.0" style="-fx-selection-bar: #CD113B; -fx-selection-bar-text-fill: white; -fx-font-weight: bold;" styleClass="table-row-cell:selected" stylesheets="@style.css">
                <columns>
-                  <TreeTableColumn fx:id="colItemCode" prefWidth="86.0" text="Item Code" />
+                  <TreeTableColumn fx:id="colItemCode" prefWidth="73.0" text="Item Code" />
                   <TreeTableColumn fx:id="colItemDescription" prefWidth="184.0" text="Item Description" />
-                  <TreeTableColumn fx:id="colUnitPrice" prefWidth="88.0" text="Unit Price" />
-                  <TreeTableColumn fx:id="colQuantity" prefWidth="73.0" text="Quantity" />
-                  <TreeTableColumn fx:id="colOption" prefWidth="87.0" text="Option" />
+                  <TreeTableColumn fx:id="colUnitPrice" prefWidth="91.0" text="Unit Price" />
+                  <TreeTableColumn fx:id="colQuantity" prefWidth="76.0" text="Quantity" />
+                  <TreeTableColumn fx:id="colOption" prefWidth="84.0" text="Option" />
                </columns>
             </JFXTreeTableView>
          </children>
