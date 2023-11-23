@@ -36,7 +36,7 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <JFXButton fx:id="btnCustomers" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="91.0" onAction="#CustomersButtonOnAction" prefHeight="55.0" prefWidth="206.0" ripplerFill="#b5592a" style="-fx-border-color: #A9A9A9; -fx-border-radius: 10; -fx-background-color: BLACK;" text="Customers" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="btnCustomers" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="91.0" onAction="#CustomersButtonOnAction" prefHeight="55.0" prefWidth="206.0" ripplerFill="#164863" style="-fx-border-color: #A9A9A9; -fx-border-radius: 10; -fx-background-color: BLACK;" text="Customers" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Leelawadee UI Bold" size="24.0" />
                </font>

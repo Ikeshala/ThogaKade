@@ -166,30 +166,44 @@ public class CustomerFormController {
 
     @FXML
     void SaveButtonOnAction(ActionEvent event) {
-        CustomersDto customersDto = new CustomersDto(txtCustomerID.getText(),
-                txtCustomerName.getText(),
-                txtCustomerAddress.getText(),
-                Double.parseDouble(txtCustomerSalary.getText())
-        );
-        String sql = "INSERT INTO customer VALUES(?,?,?,?)";
+        if (txtCustomerID.getText().isEmpty() || txtCustomerName.getText().isEmpty() ||
+                txtCustomerAddress.getText().isEmpty() || txtCustomerSalary.getText().isEmpty()) {
+            new Alert(Alert.AlertType.ERROR, "Please fill in all fields!").show();
+            return;
+        }
 
         try {
-            PreparedStatement pstm = DBConnection.getInstance().getConnection().prepareStatement(sql);
-            pstm.setString(1,customersDto.getId());
-            pstm.setString(2,customersDto.getName());
-            pstm.setString(3,customersDto.getAddress());
-            pstm.setDouble(4,customersDto.getSalary());
-            int result = pstm.executeUpdate();
-            if (result>0){
-                new Alert(Alert.AlertType.INFORMATION,"Customer Saved!").show();
+            CustomersDto customersDto = new CustomersDto(
+                    txtCustomerID.getText(),
+                    txtCustomerName.getText(),
+                    txtCustomerAddress.getText(),
+                    Double.parseDouble(txtCustomerSalary.getText())
+            );
+
+            boolean isSaved = customerModel.saveCustomer(customersDto);
+
+            if (isSaved) {
+                new Alert(Alert.AlertType.INFORMATION, "Customer Saved!").show();
                 loadCustomersTable();
+                clearFields();
             }
 
-        } catch (SQLIntegrityConstraintViolationException ex){
-            new Alert(Alert.AlertType.ERROR,"Duplicate Entry!").show();
+        } catch (SQLIntegrityConstraintViolationException ex) {
+            new Alert(Alert.AlertType.ERROR, "Duplicate Entry!").show();
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    private void clearFields() {
+        tblCustomers.refresh();
+
+        txtCustomerID.clear();
+        txtCustomerName.clear();
+        txtCustomerAddress.clear();
+        txtCustomerSalary.clear();
+
+        txtCustomerID.setEditable(true);
     }
 
     @FXML

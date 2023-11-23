@@ -3,6 +3,7 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.lang.String?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tooltip?>
@@ -185,7 +186,7 @@
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXTreeTableView id="#tblCustomers" fx:id="tblCustomers" layoutX="205.0" layoutY="79.0" prefHeight="311.0" prefWidth="519.0" style="-fx-selection-bar: #B5592A; -fx-font-weight: BOLD;" styleClass="table-row-cell:selected" stylesheets="@style.css">
+            <JFXTreeTableView id="#tblCustomers" fx:id="tblCustomers" layoutX="205.0" layoutY="79.0" prefHeight="311.0" prefWidth="519.0" style="-fx-selection-bar: #B5592A; -fx-font-weight: BOLD; -fx-border-radius: 5; -fx-border-color: #A9A9A9;" stylesheets="@style.css">
                <columns>
                   <TreeTableColumn fx:id="colCustomerID" prefWidth="79.0" text="Customer ID" />
                   <TreeTableColumn fx:id="colCustomerName" prefWidth="117.0" text="Customer Name" />
@@ -193,6 +194,10 @@
                   <TreeTableColumn fx:id="colCustomerSalary" prefWidth="104.0" text="Customer Salary" />
                   <TreeTableColumn fx:id="colOption" prefWidth="84.0" text="Option" />
                </columns>
+               <styleClass>
+                  <String fx:value="table-row-cell:selected" />
+                  <String fx:value="table-view" />
+               </styleClass>
             </JFXTreeTableView>
          </children>
       </AnchorPane>

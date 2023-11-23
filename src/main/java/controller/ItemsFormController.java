@@ -109,7 +109,7 @@ public class ItemsFormController {
                 button.setBlendMode(BlendMode.EXCLUSION);
                 button.setTextAlignment(TextAlignment.CENTER);
                 button.setTextFill(Color.WHITE);
-                button.setStyle("-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color:  #B5592A;");
+                button.setStyle("-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color:   #45474B;");
 
                 ItemsTm itemsTm = new ItemsTm(
                         dto.getCode(),
@@ -171,30 +171,44 @@ public class ItemsFormController {
 
     @FXML
     void SaveButtonOnAction(ActionEvent event) {
-        ItemsDto itemDto = new ItemsDto(txtItemCode.getText(),
-                txtItemDescription.getText(),
-                Double.parseDouble(txtUnitPrice.getText()),
-                Integer.parseInt(txtQuantityOnHand.getText())
-        );
-        String sql = "INSERT INTO item VALUES(?,?,?,?)";
+        if (txtItemCode.getText().isEmpty() || txtItemDescription.getText().isEmpty() ||
+                txtUnitPrice.getText().isEmpty() || txtQuantityOnHand.getText().isEmpty()) {
+            new Alert(Alert.AlertType.ERROR, "Please fill in all fields!").show();
+            return;
+        }
 
         try {
-            PreparedStatement pstm = DBConnection.getInstance().getConnection().prepareStatement(sql);
-            pstm.setString(1,itemDto.getCode());
-            pstm.setString(2,itemDto.getDescription());
-            pstm.setDouble(3,itemDto.getUnitPrice());
-            pstm.setInt(4,itemDto.getQuantity());
-            int result = pstm.executeUpdate();
-            if (result>0){
-                new Alert(Alert.AlertType.INFORMATION,"Item Saved!").show();
+            ItemsDto itemsDto = new ItemsDto(
+                    txtItemCode.getText(),
+                    txtItemDescription.getText(),
+                    Double.parseDouble(txtUnitPrice.getText()),
+                    Integer.parseInt(txtQuantityOnHand.getText())
+            );
+
+            boolean isSaved = itemModel.saveItem(itemsDto);
+
+            if (isSaved) {
+                new Alert(Alert.AlertType.INFORMATION, "Item Saved!").show();
                 loadItemsTable();
+                clearFields();
             }
 
-        } catch (SQLIntegrityConstraintViolationException ex){
-            new Alert(Alert.AlertType.ERROR,"Duplicate Entry!").show();
+        } catch (SQLIntegrityConstraintViolationException ex) {
+            new Alert(Alert.AlertType.ERROR, "Duplicate Entry!").show();
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    private void clearFields() {
+        tblItems.refresh();
+
+        txtItemCode.clear();
+        txtItemDescription.clear();
+        txtUnitPrice.clear();
+        txtQuantityOnHand.clear();
+
+        txtItemCode.setEditable(true);
     }
 
     @FXML

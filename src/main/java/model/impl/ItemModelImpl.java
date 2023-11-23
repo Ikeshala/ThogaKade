@@ -13,8 +13,16 @@ import java.util.List;
 
 public class ItemModelImpl implements ItemModel {
     @Override
-    public boolean saveItem(ItemsDto dto) {
-        return false;
+    public boolean saveItem(ItemsDto dto) throws SQLException, ClassNotFoundException {
+        String sql = "INSERT INTO item VALUES(?,?,?,?)";
+        PreparedStatement pstm = DBConnection.getInstance().getConnection().prepareStatement(sql);
+
+        pstm.setString(1, dto.getCode());
+        pstm.setString(2, dto.getDescription());
+        pstm.setDouble(3, dto.getUnitPrice());
+        pstm.setInt(4, dto.getQuantity());
+
+        return pstm.executeUpdate()>0;
     }
 
     @Override
