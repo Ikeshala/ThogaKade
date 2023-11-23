@@ -151,18 +151,13 @@ public class ItemsFormController {
     }
 
     private void deleteItem(String code) {
-        String sql = "DELETE FROM item WHERE code=?";
-
         try {
-            PreparedStatement pstm = DBConnection.getInstance().getConnection().prepareStatement(sql);
-            pstm.setString(1, code);
-            int result = pstm.executeUpdate();
-
-            if (result > 0) {
-                new Alert(Alert.AlertType.INFORMATION, "Item Deleted!").show();
+            boolean isDeleted = itemModel.deleteItem(code);
+            if (isDeleted){
+                new Alert(Alert.AlertType.INFORMATION,"Item Deleted!").show();
                 loadItemsTable();
-            } else {
-                new Alert(Alert.AlertType.ERROR, "Something went wrong!").show();
+            }else{
+                new Alert(Alert.AlertType.ERROR,"Something went wrong!").show();
             }
 
         } catch (ClassNotFoundException | SQLException e) {

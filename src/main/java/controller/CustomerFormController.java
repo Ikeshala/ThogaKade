@@ -146,18 +146,13 @@ public class CustomerFormController {
     }
 
     private void deleteCustomer(String id) {
-        String sql = "DELETE FROM customer WHERE id=?";
-
         try {
-            PreparedStatement pstm = DBConnection.getInstance().getConnection().prepareStatement(sql);
-            pstm.setString(1, id);
-            int result = pstm.executeUpdate();
-
-            if (result > 0) {
-                new Alert(Alert.AlertType.INFORMATION, "Item Deleted!").show();
+            boolean isDeleted = customerModel.deleteCustomer(id);
+            if (isDeleted){
+                new Alert(Alert.AlertType.INFORMATION,"Customer Deleted!").show();
                 loadCustomersTable();
-            } else {
-                new Alert(Alert.AlertType.ERROR, "Something went wrong!").show();
+            }else{
+                new Alert(Alert.AlertType.ERROR,"Something went wrong!").show();
             }
 
         } catch (ClassNotFoundException | SQLException e) {

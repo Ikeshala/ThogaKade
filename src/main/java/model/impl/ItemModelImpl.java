@@ -44,8 +44,11 @@ public class ItemModelImpl implements ItemModel {
     }
 
     @Override
-    public boolean deleteItem(String code) {
-        return false;
+    public boolean deleteItem(String code) throws SQLException, ClassNotFoundException {
+        String sql = "DELETE FROM item WHERE code=?";
+        PreparedStatement pstm = DBConnection.getInstance().getConnection().prepareStatement(sql);
+        pstm.setString(1,code);
+        return pstm.executeUpdate()>0;
     }
 
     @Override
