@@ -131,6 +131,23 @@ public class ItemsFormController {
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
+
+        btnUpdate.setDisable(true);
+        tblItems.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            setData(newValue != null ? newValue.getValue() : null);
+        });
+    }
+
+    private void setData(ItemsTm itemsTm) {
+        if (itemsTm != null) {
+            txtItemCode.setEditable(false);
+            btnUpdate.setDisable(false);
+
+            txtItemCode.setText(itemsTm.getCode());
+            txtItemDescription.setText(itemsTm.getDescription());
+            txtUnitPrice.setText(String.valueOf(itemsTm.getUnitPrice()));
+            txtQuantityOnHand.setText(String.valueOf(itemsTm.getQuantity()));
+        }
     }
 
     private void deleteItem(String code) {
@@ -213,7 +230,26 @@ public class ItemsFormController {
 
     @FXML
     void UpdateButtonOnAction(ActionEvent event) {
+        ItemsTm selectedItem = tblItems.getSelectionModel().getSelectedItem().getValue();
 
+        try {
+            ItemsDto updatedItem = new ItemsDto(
+                    selectedItem.getCode(),
+                    txtItemDescription.getText(),
+                    Double.parseDouble(txtUnitPrice.getText()),
+                    Integer.parseInt(txtQuantityOnHand.getText())
+            );
+
+            boolean isUpdated = itemModel.updateItem(updatedItem);
+
+            if (isUpdated) {
+                new Alert(Alert.AlertType.INFORMATION, "Item Updated!").show();
+                loadItemsTable();
+                clearFields();
+            }
+
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
     }
-
 }

@@ -126,6 +126,23 @@ public class CustomerFormController {
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
+
+        btnUpdate.setDisable(true);
+        tblCustomers.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            setData(newValue != null ? newValue.getValue() : null);
+        });
+    }
+
+    private void setData(CustomerTm customerTm) {
+        if (customerTm != null) {
+            txtCustomerID.setEditable(false);
+            btnUpdate.setDisable(false);
+
+            txtCustomerID.setText(customerTm.getId());
+            txtCustomerName.setText(customerTm.getName());
+            txtCustomerAddress.setText(customerTm.getAddress());
+            txtCustomerSalary.setText(String.valueOf(customerTm.getSalary()));
+        }
     }
 
     private void deleteCustomer(String id) {
@@ -208,7 +225,26 @@ public class CustomerFormController {
 
     @FXML
     void UpdateButtonOnAction(ActionEvent event) {
+        CustomerTm selectedCustomer = tblCustomers.getSelectionModel().getSelectedItem().getValue();
 
+        try {
+            CustomersDto updatedCustomer = new CustomersDto(
+                    selectedCustomer.getId(),
+                    txtCustomerName.getText(),
+                    txtCustomerAddress.getText(),
+                    Double.parseDouble(txtCustomerSalary.getText())
+            );
+
+            boolean isUpdated = customerModel.updateCustomer(updatedCustomer);
+
+            if (isUpdated) {
+                new Alert(Alert.AlertType.INFORMATION, "Customer Updated!").show();
+                loadCustomersTable();
+                clearFields();
+            }
+
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
     }
-
 }
