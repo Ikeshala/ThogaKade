@@ -1,7 +1,6 @@
 package model.impl;
 
 import db.DBConnection;
-import dto.CustomersDto;
 import dto.ItemsDto;
 import model.ItemModel;
 

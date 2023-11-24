@@ -5,7 +5,6 @@ import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTreeTableView;
 import com.jfoenix.controls.RecursiveTreeItem;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
-import db.DBConnection;
 import dto.CustomersDto;
 import dto.tm.CustomerTm;
 import javafx.collections.FXCollections;
@@ -29,7 +28,8 @@ import model.CustomerModel;
 import model.impl.CustomerModelImpl;
 
 import java.io.IOException;
-import java.sql.*;
+import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
 
 public class CustomerFormController {

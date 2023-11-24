@@ -5,10 +5,7 @@ import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTreeTableView;
 import com.jfoenix.controls.RecursiveTreeItem;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
-import db.DBConnection;
-import dto.CustomersDto;
 import dto.ItemsDto;
-import dto.tm.CustomerTm;
 import dto.tm.ItemsTm;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -22,18 +19,17 @@ import javafx.scene.control.TreeTableColumn;
 import javafx.scene.control.cell.TreeItemPropertyValueFactory;
 import javafx.scene.effect.BlendMode;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import dto.tm.ItemsTm;
 import model.ItemModel;
 import model.impl.ItemModelImpl;
 
 import java.io.IOException;
-import java.sql.*;
+import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
 
 public class ItemsFormController {

@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Implemented the delete method for both customers and items in their respective model classes.">
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Implemented a Refresh Button Action Event for both customers and items to update and reload the corresponding data in the user interface, ensuring real-time synchronization with the underlying data source.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_45.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/PlaceOrderForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DashboardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/impl/ItemModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/impl/ItemModelImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/CustomerForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/CustomerForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/DashboardForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/DashboardForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ItemsForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ItemsForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +56,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/resources/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/resources/view&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -68,8 +76,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\images" />
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\view" />
+      <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\images" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -139,7 +147,9 @@
       <workItem from="1700629531972" duration="28147000" />
       <workItem from="1700669529847" duration="11898000" />
       <workItem from="1700714414449" duration="16781000" />
-      <workItem from="1700744973880" duration="16735000" />
+      <workItem from="1700744973880" duration="17327000" />
+      <workItem from="1700804788017" duration="5422000" />
+      <workItem from="1700821946861" duration="4482000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -221,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700769909034</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Implemented a Refresh Button Action Event for both customers and items to update and reload the corresponding data in the user interface, ensuring real-time synchronization with the underlying data source.">
+      <option name="closed" value="true" />
+      <created>1700770611670</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700770611670</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +265,7 @@
     <MESSAGE value="Implemented the save method for both customers and items in their respective model classes.  Additionally, 'clearFields' method was created to reset input fields." />
     <MESSAGE value="Implemented the update method for both customers and items in their respective model classes.  Additionally, 'setData' method was created." />
     <MESSAGE value="Implemented the delete method for both customers and items in their respective model classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented the delete method for both customers and items in their respective model classes." />
+    <MESSAGE value="Implemented a Refresh Button Action Event for both customers and items to update and reload the corresponding data in the user interface, ensuring real-time synchronization with the underlying data source." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented a Refresh Button Action Event for both customers and items to update and reload the corresponding data in the user interface, ensuring real-time synchronization with the underlying data source." />
   </component>
 </project>
