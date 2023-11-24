@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Implemented a Refresh Button Action Event for both customers and items to update and reload the corresponding data in the user interface, ensuring real-time synchronization with the underlying data source.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_45.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/PlaceOrderForm.fxml" afterDir="false" />
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Revamped UI for placing orders and made necessary modifications to improve overall user experience across various UI components.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DashboardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/impl/ItemModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/impl/ItemModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/CustomerForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/CustomerForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/DashboardForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/DashboardForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ItemsForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ItemsForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +139,7 @@
       <workItem from="1700714414449" duration="16781000" />
       <workItem from="1700744973880" duration="17327000" />
       <workItem from="1700804788017" duration="5422000" />
-      <workItem from="1700821946861" duration="4482000" />
+      <workItem from="1700821946861" duration="5593000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -239,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700770611670</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Revamped UI for placing orders and made necessary modifications to improve overall user experience across various UI components.">
+      <option name="closed" value="true" />
+      <created>1700827037797</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700827037797</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +264,7 @@
     <MESSAGE value="Implemented the update method for both customers and items in their respective model classes.  Additionally, 'setData' method was created." />
     <MESSAGE value="Implemented the delete method for both customers and items in their respective model classes." />
     <MESSAGE value="Implemented a Refresh Button Action Event for both customers and items to update and reload the corresponding data in the user interface, ensuring real-time synchronization with the underlying data source." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented a Refresh Button Action Event for both customers and items to update and reload the corresponding data in the user interface, ensuring real-time synchronization with the underlying data source." />
+    <MESSAGE value="Revamped UI for placing orders and made necessary modifications to improve overall user experience across various UI components." />
+    <option name="LAST_COMMIT_MESSAGE" value="Revamped UI for placing orders and made necessary modifications to improve overall user experience across various UI components." />
   </component>
 </project>
