@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Revamped UI for placing orders and made necessary modifications to improve overall user experience across various UI components.">
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Incorporated a new directory to archive UI images for future reference and utilization.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +142,9 @@
       <workItem from="1700744973880" duration="17327000" />
       <workItem from="1700804788017" duration="5422000" />
       <workItem from="1700821946861" duration="5593000" />
+      <workItem from="1700827842958" duration="1461000" />
+      <workItem from="1700901762020" duration="621000" />
+      <workItem from="1701158558580" duration="1702000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -237,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700827037797</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Incorporated a new directory to archive UI images for future reference and utilization.">
+      <option name="closed" value="true" />
+      <created>1700828050900</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700828050900</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +278,7 @@
     <MESSAGE value="Implemented the delete method for both customers and items in their respective model classes." />
     <MESSAGE value="Implemented a Refresh Button Action Event for both customers and items to update and reload the corresponding data in the user interface, ensuring real-time synchronization with the underlying data source." />
     <MESSAGE value="Revamped UI for placing orders and made necessary modifications to improve overall user experience across various UI components." />
-    <option name="LAST_COMMIT_MESSAGE" value="Revamped UI for placing orders and made necessary modifications to improve overall user experience across various UI components." />
+    <MESSAGE value="Incorporated a new directory to archive UI images for future reference and utilization." />
+    <option name="LAST_COMMIT_MESSAGE" value="Incorporated a new directory to archive UI images for future reference and utilization." />
   </component>
 </project>

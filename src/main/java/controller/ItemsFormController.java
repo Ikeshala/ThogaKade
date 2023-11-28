@@ -7,6 +7,8 @@ import com.jfoenix.controls.RecursiveTreeItem;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import dto.ItemsDto;
 import dto.tm.ItemsTm;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -31,6 +33,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class ItemsFormController {
 
@@ -90,6 +93,23 @@ public class ItemsFormController {
         colQuantity.setCellValueFactory(new TreeItemPropertyValueFactory<>("quantity"));
         colOption.setCellValueFactory(new TreeItemPropertyValueFactory<>("btn"));
         loadItemsTable();
+
+        txtSearchItem.textProperty().addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observableValue, String s, String newValue) {
+                String lowerCaseNewValue = newValue.toLowerCase();
+                tblItems.setPredicate(new Predicate<TreeItem<ItemsTm>>() {
+                    @Override
+                    public boolean test(TreeItem<ItemsTm> itemsTmTreeItem) {
+                        String lowerCaseCode = itemsTmTreeItem.getValue().getCode().toLowerCase();
+                        String lowerCaseDescription = itemsTmTreeItem.getValue().getDescription().toLowerCase();
+
+                        return lowerCaseCode.contains(lowerCaseNewValue) ||
+                                lowerCaseDescription.contains(lowerCaseNewValue);
+                    }
+                });
+            }
+        });
     }
 
     private void loadItemsTable() {
