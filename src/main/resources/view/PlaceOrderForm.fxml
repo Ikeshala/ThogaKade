@@ -37,119 +37,26 @@
                         <Glow level="1.0" />
                      </effect>
                      <graphic>
-                        <ImageView blendMode="DARKEN" fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView blendMode="HARD_LIGHT" fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/img_14.png" />
+                              <Image url="@../images/img_12.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <Label alignment="CENTER" blendMode="HARD_LIGHT" contentDisplay="CENTER" layoutX="293.0" layoutY="13.0" text="Place Order" textAlignment="CENTER" underline="true">
+                  <Label alignment="CENTER" blendMode="HARD_LIGHT" contentDisplay="CENTER" layoutX="319.0" layoutY="13.0" text="Place Order" textAlignment="CENTER" textFill="WHITE" underline="true">
                      <font>
                         <Font name="Showcard Gothic" size="30.0" />
                      </font>
-                     <effect>
-                        <ColorAdjust brightness="-1.0" contrast="1.0" />
-                     </effect>
                   </Label>
-                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="783.0" layoutY="13.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                  <ImageView blendMode="HARD_LIGHT" fitHeight="35.0" fitWidth="35.0" layoutX="783.0" layoutY="13.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/img_23.png" />
+                        <Image url="@../images/img_8.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <Label layoutX="19.0" layoutY="117.0" text="Customer ID">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Label>
-            <JFXComboBox fx:id="cmbCustomerID" blendMode="DIFFERENCE" focusColor="WHITE" layoutX="19.0" layoutY="135.0" prefHeight="29.0" prefWidth="195.0">
-               <effect>
-                  <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
-               </effect>
-               <tooltip>
-                  <Tooltip text="Enter customer ID here" />
-               </tooltip>
-            </JFXComboBox>
-            <Label layoutX="19.0" layoutY="178.0" text="Customer Name">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Label>
-            <JFXTextField fx:id="txtCustomerName" blendMode="DIFFERENCE" focusColor="WHITE" layoutX="19.0" layoutY="196.0" prefHeight="29.0" prefWidth="195.0">
-               <font>
-                  <Font name="System Italic" size="13.0" />
-               </font>
-               <effect>
-                  <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
-               </effect>
-               <tooltip>
-                  <Tooltip text="Enter customer name here" />
-               </tooltip>
-            </JFXTextField>
-            <Label layoutX="19.0" layoutY="239.0" text="Item Code">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Label>
-            <JFXComboBox fx:id="cmbItemCode" blendMode="DIFFERENCE" focusColor="WHITE" layoutX="19.0" layoutY="257.0" prefHeight="29.0" prefWidth="195.0">
-               <effect>
-                  <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
-               </effect>
-               <tooltip>
-                  <Tooltip text="Enter item code here" />
-               </tooltip>
-            </JFXComboBox>
-            <Label layoutX="19.0" layoutY="300.0" text="Item Description">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Label>
-            <JFXTextField fx:id="txtItemDescription" blendMode="DIFFERENCE" focusColor="WHITE" layoutX="19.0" layoutY="319.0" prefHeight="29.0" prefWidth="195.0">
-               <font>
-                  <Font name="System Italic" size="13.0" />
-               </font>
-               <effect>
-                  <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
-               </effect>
-               <tooltip>
-                  <Tooltip text="Enter item description here" />
-               </tooltip>
-            </JFXTextField>
-            <Label layoutX="19.0" layoutY="363.0" text="Unit Price">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Label>
-            <JFXTextField fx:id="txtUnitPrice" blendMode="DIFFERENCE" focusColor="WHITE" layoutX="19.0" layoutY="381.0" prefHeight="29.0" prefWidth="195.0">
-               <font>
-                  <Font name="System Italic" size="13.0" />
-               </font>
-               <effect>
-                  <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
-               </effect>
-               <tooltip>
-                  <Tooltip text="Enter unit price here" />
-               </tooltip>
-            </JFXTextField>
-            <Label layoutX="19.0" layoutY="425.0" text="Buying Quantity">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Label>
-            <JFXTextField fx:id="txtBuyingQuantity" blendMode="DIFFERENCE" focusColor="WHITE" layoutX="19.0" layoutY="446.0" prefHeight="29.0" prefWidth="195.0">
-               <font>
-                  <Font name="System Italic" size="13.0" />
-               </font>
-               <effect>
-                  <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
-               </effect>
-               <tooltip>
-                  <Tooltip text="Enter buying quantity here" />
-               </tooltip>
-            </JFXTextField>
-            <JFXButton fx:id="btnPlaceOrder" alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="613.0" layoutY="489.0" onAction="#PlaceOrderButtonOnAction" prefHeight="32.0" prefWidth="195.0" style="-fx-border-color: #6B240C; -fx-border-radius: 5; -fx-background-color: #6B240C;" text="PLACE ORDER" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="btnPlaceOrder" alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="616.0" layoutY="489.0" onAction="#PlaceOrderButtonOnAction" prefHeight="32.0" prefWidth="195.0" style="-fx-border-color: #6B240C; -fx-border-radius: 5; -fx-background-color: #6B240C;" text="PLACE ORDER" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Leelawadee UI Bold" size="14.0" />
                </font>
@@ -162,7 +69,7 @@
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXButton fx:id="btnAddToCart" alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="19.0" layoutY="489.0" onAction="#AddToCartButtonOnAction" prefHeight="32.0" prefWidth="195.0" style="-fx-border-color: #6B240C; -fx-border-radius: 5; -fx-background-color: #6B240C;" text="ADD TO CART" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="btnAddToCart" alignment="CENTER" blendMode="HARD_LIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="24.0" layoutY="489.0" onAction="#AddToCartButtonOnAction" prefHeight="32.0" prefWidth="195.0" style="-fx-border-color: #6B240C; -fx-border-radius: 5; -fx-background-color: #6B240C;" text="ADD TO CART" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Leelawadee UI Bold" size="14.0" />
                </font>
@@ -175,12 +82,12 @@
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXTreeTableView id="#tblItems" fx:id="tblItems" layoutX="243.0" layoutY="81.0" prefHeight="394.0" prefWidth="565.0" style="-fx-selection-bar: #CD113B; -fx-font-weight: bold; -fx-border-color: #A9A9A9; -fx-border-radius: 5;" stylesheets="@style.css">
+            <JFXTreeTableView id="#tblItems" fx:id="tblOrders" layoutX="246.0" layoutY="81.0" prefHeight="394.0" prefWidth="565.0" style="-fx-selection-bar: #94ff66; -fx-font-weight: bold; -fx-border-color: #A9A9A9; -fx-border-radius: 5;" stylesheets="@style.css">
                <columns>
                   <TreeTableColumn fx:id="colItemCode" prefWidth="73.0" text="Item Code" />
-                  <TreeTableColumn fx:id="colItemDescription" prefWidth="238.0" text="Item Description" />
-                  <TreeTableColumn fx:id="colUnitPrice" prefWidth="91.0" text="Unit Price" />
-                  <TreeTableColumn fx:id="colQuantity" prefWidth="76.0" text="Quantity" />
+                  <TreeTableColumn fx:id="colItemDescription" prefWidth="212.0" text="Item Description" />
+                  <TreeTableColumn fx:id="colQuantity" prefWidth="81.0" text="Quantity" />
+                  <TreeTableColumn fx:id="colAmount" prefWidth="104.0" text="Amount" />
                   <TreeTableColumn fx:id="colOption" prefWidth="76.0" text="Option" />
                </columns>
                <styleClass>
@@ -188,26 +95,120 @@
                   <String fx:value="table-view" />
                </styleClass>
             </JFXTreeTableView>
-            <Label layoutX="243.0" layoutY="495.0" text="Total : ">
+            <Label layoutX="246.0" layoutY="495.0" text="Total : ">
                <font>
                   <Font name="Leelawadee UI Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="txtTotal" layoutX="293.0" layoutY="495.0" text="0.00">
+            <Label fx:id="lblTotal" layoutX="296.0" layoutY="495.0" text="0.00">
                <font>
                   <Font name="Leelawadee UI Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="19.0" layoutY="81.0" text="Order ID : ">
-               <font>
-                  <Font name="Leelawadee UI Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label fx:id="txtOrderId" layoutX="89.0" layoutY="81.0">
-               <font>
-                  <Font name="Leelawadee UI Bold" size="14.0" />
-               </font>
-            </Label>
+            <AnchorPane blendMode="HARD_LIGHT" layoutX="22.0" layoutY="81.0" prefHeight="394.0" prefWidth="201.0" style="-fx-background-color: #6B240C; -fx-background-radius: 10;">
+               <children>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="43.0" text="Customer ID" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="cmbCustomerID" blendMode="ADD" focusColor="WHITE" layoutX="19.0" layoutY="63.0" prefHeight="29.0" prefWidth="164.0">
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Enter customer ID here" />
+                     </tooltip>
+                  </JFXComboBox>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="107.0" text="Customer Name" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtCustomerName" blendMode="ADD" editable="false" focusColor="WHITE" layoutX="19.0" layoutY="124.0" prefHeight="29.0" prefWidth="164.0">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Enter customer name here" />
+                     </tooltip>
+                  </JFXTextField>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="166.0" text="Item Code" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="cmbItemCode" blendMode="ADD" focusColor="WHITE" layoutX="19.0" layoutY="181.0" prefHeight="29.0" prefWidth="164.0">
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Enter item code here" />
+                     </tooltip>
+                  </JFXComboBox>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="223.0" text="Item Description" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtItemDescription" blendMode="ADD" editable="false" focusColor="WHITE" layoutX="19.0" layoutY="238.0" prefHeight="29.0" prefWidth="164.0">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Enter item description here" />
+                     </tooltip>
+                  </JFXTextField>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="280.0" text="Unit Price" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtUnitPrice" blendMode="ADD" editable="false" focusColor="WHITE" layoutX="19.0" layoutY="295.0" prefHeight="29.0" prefWidth="164.0">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Enter unit price here" />
+                     </tooltip>
+                  </JFXTextField>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="338.0" text="Buying Quantity" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtBuyingQuantity" blendMode="ADD" focusColor="WHITE" layoutX="19.0" layoutY="353.0" prefHeight="29.0" prefWidth="164.0">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Enter buying quantity here" />
+                     </tooltip>
+                  </JFXTextField>
+                  <Label blendMode="HARD_LIGHT" layoutX="19.0" layoutY="9.0" text="Order ID : " textFill="WHITE">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtOrderId" blendMode="SCREEN" layoutX="19.0" layoutY="9.0" textFill="WHITE">
+                     <font>
+                        <Font name="Leelawadee UI Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
          </children>
       </AnchorPane>
    </children>

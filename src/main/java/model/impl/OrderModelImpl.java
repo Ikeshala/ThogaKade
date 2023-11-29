@@ -1,8 +1,6 @@
 package model.impl;
 
-import dto.tm.OrderDto;
-import model.CustomerModel;
-import model.ItemModel;
+import dto.OrderDto;
 import model.OrderModel;
 
 public class OrderModelImpl implements OrderModel {

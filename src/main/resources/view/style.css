@@ -16,11 +16,16 @@
 }
 
 #tblCustomers.table-row-cell:selected{
-    -fx-selection-bar: #B5592A;
+    -fx-selection-bar: #ff9393;
     -fx-font-weight: bold;
 }
 
 #tblItems.table-row-cell:selected{
-    -fx-selection-bar:  #CD113B;
+    -fx-selection-bar:   #ffec66;
+    -fx-font-weight: bold;
+}
+
+#tblOrders.table-row-cell:selected{
+    -fx-selection-bar:  #94ff66;
     -fx-font-weight: bold;
 }

@@ -1,4 +1,4 @@
-package dto.tm;
+package dto;
 
 public class OrderDto {
 }

@@ -121,10 +121,10 @@ public class CustomerFormController {
                 JFXButton button = new JFXButton("DELETE");
                 button.setFont(Font.font("System", FontWeight.BOLD, 13));
                 button.setButtonType(JFXButton.ButtonType.RAISED);
-                button.setBlendMode(BlendMode.EXCLUSION);
+                button.setBlendMode(BlendMode.HARD_LIGHT);
                 button.setTextAlignment(TextAlignment.CENTER);
                 button.setTextFill(Color.WHITE);
-                button.setStyle("-fx-border-color: #A9A9A9; -fx-border-radius: 5; -fx-background-color:  #B5592A;");
+                button.setStyle("-fx-border-color:  #164863; -fx-border-radius: 5; -fx-background-color:   #164863;");
 
                 CustomerTm customerTm = new CustomerTm(
                         dto.getId(),

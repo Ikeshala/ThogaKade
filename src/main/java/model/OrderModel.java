@@ -1,6 +1,6 @@
 package model;
 
-import dto.tm.OrderDto;
+import dto.OrderDto;
 
 public interface OrderModel {
     boolean saveOrder(OrderDto dto);
