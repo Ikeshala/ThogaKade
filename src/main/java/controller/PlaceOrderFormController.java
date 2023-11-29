@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableColumn;
@@ -94,26 +95,26 @@ public class PlaceOrderFormController {
         loadItemCodes();
 
         cmbCustomerID.getSelectionModel().selectedItemProperty().addListener((observableValue, oldValue, customerId) ->
-                {
-                    for (CustomersDto dto:customers) {
-                        if (dto.getId().equals(customerId)){
-                            txtCustomerName.setText(dto.getName());
-                        }
-
+            {
+                for (CustomersDto dto:customers) {
+                    if (dto.getId().equals(customerId)){
+                        txtCustomerName.setText(dto.getName());
                     }
+
                 }
+            }
         );
 
         cmbItemCode.getSelectionModel().selectedItemProperty().addListener((observableValue, oldValue, itemCode) ->
-                {
-                    for (ItemsDto dto:items) {
-                        if (dto.getCode().equals(itemCode)){
-                            txtItemDescription.setText(dto.getDescription());
-                            txtUnitPrice.setText(String.format("%.2f",dto.getUnitPrice()));
-                        }
-
+            {
+                for (ItemsDto dto:items) {
+                    if (dto.getCode().equals(itemCode)){
+                        txtItemDescription.setText(dto.getDescription());
+                        txtUnitPrice.setText(String.format("%.2f",dto.getUnitPrice()));
                     }
+
                 }
+            }
         );
     }
 
@@ -146,7 +147,28 @@ public class PlaceOrderFormController {
     @FXML
     void AddToCartButtonOnAction(ActionEvent event) {
         try {
-            double amount = itemModel.getItem(cmbItemCode.getValue().toString()).getUnitPrice() * Integer.parseInt(txtBuyingQuantity.getText());
+            String selectedItemCode = cmbItemCode.getValue().toString();
+            int buyingQuantity = Integer.parseInt(txtBuyingQuantity.getText());
+            int availableQuantity = itemModel.getItem(selectedItemCode).getQuantity();
+
+            if (buyingQuantity > availableQuantity) {
+                new Alert(Alert.AlertType.INFORMATION, "Max quantity available " + availableQuantity + "!").show();
+                return;
+            }
+
+            for (OrderTm order : tmList) {
+                if (order.getCode().equals(selectedItemCode)) {
+                    int totalQuantity = order.getQuantity() + buyingQuantity;
+
+                    if (totalQuantity > availableQuantity) {
+                        int remainingQuantity = availableQuantity - (totalQuantity - buyingQuantity);
+                        new Alert(Alert.AlertType.WARNING, "Remaining Quantity " + remainingQuantity + "!").show();
+                        return;
+                    }
+                }
+            }
+
+            double amount = itemModel.getItem(selectedItemCode).getUnitPrice() * buyingQuantity;
 
             JFXButton button = new JFXButton("DELETE");
             button.setFont(Font.font("System", FontWeight.BOLD, 13));

@@ -8,7 +8,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.control.TreeTableColumn?>
-<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -141,9 +140,6 @@
                      <font>
                         <Font name="System Italic" size="13.0" />
                      </font>
-                     <effect>
-                        <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
-                     </effect>
                      <tooltip>
                         <Tooltip text="Enter item code here" />
                      </tooltip>
@@ -157,9 +153,6 @@
                      <font>
                         <Font name="System Italic" size="13.0" />
                      </font>
-                     <effect>
-                        <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
-                     </effect>
                      <tooltip>
                         <Tooltip text="Enter item description here" />
                      </tooltip>
@@ -173,9 +166,6 @@
                      <font>
                         <Font name="System Italic" size="13.0" />
                      </font>
-                     <effect>
-                        <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
-                     </effect>
                      <tooltip>
                         <Tooltip text="Enter unit price here" />
                      </tooltip>
@@ -189,9 +179,6 @@
                      <font>
                         <Font name="System Italic" size="13.0" />
                      </font>
-                     <effect>
-                        <ColorAdjust brightness="1.0" contrast="0.4" hue="1.0" saturation="0.8" />
-                     </effect>
                      <tooltip>
                         <Tooltip text="Enter quantity on hand here" />
                      </tooltip>
