@@ -4,6 +4,7 @@ import com.jfoenix.controls.*;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import dto.CustomersDto;
 import dto.ItemsDto;
+import dto.OrderDto;
 import dto.tm.OrderTm;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -25,8 +26,10 @@ import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 import model.CustomerModel;
 import model.ItemModel;
+import model.OrderModel;
 import model.impl.CustomerModelImpl;
 import model.impl.ItemModelImpl;
+import model.impl.OrderModelImpl;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -77,12 +80,13 @@ public class PlaceOrderFormController {
     private Label lblTotal;
 
     @FXML
-    private Label txtOrderId;
+    private Label lblOrderId;
     private double total = 0;
     private List<CustomersDto> customers;
     private List<ItemsDto> items;
     private CustomerModel customerModel = new CustomerModelImpl();
     private ItemModel itemModel = new ItemModelImpl();
+    private OrderModel orderModel = new OrderModelImpl();
     private ObservableList<OrderTm> tmList = FXCollections.observableArrayList();
     public void initialize(){
         colItemCode.setCellValueFactory(new TreeItemPropertyValueFactory<>("code"));
@@ -93,6 +97,7 @@ public class PlaceOrderFormController {
 
         loadCustomerIds();
         loadItemCodes();
+        generateId();
 
         cmbCustomerID.getSelectionModel().selectedItemProperty().addListener((observableValue, oldValue, customerId) ->
             {
@@ -230,9 +235,27 @@ public class PlaceOrderFormController {
         }
     }
 
+    public void generateId(){
+        try {
+            OrderDto dto = orderModel.lastOrder();
+            if (dto != null){
+                String id = dto.getOrderId();
+                int number = Integer.parseInt(id.split("[D]")[1]);
+                number++;
+                lblOrderId.setText(String.format("D%03d",number));
+            }else {
+                lblOrderId.setText("D001");
+            }
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     @FXML
     void PlaceOrderButtonOnAction(ActionEvent event) {
-
+        if (!tmList.isEmpty()){
+          //  orderModel.saveOrder()
+        }
     }
 
 }

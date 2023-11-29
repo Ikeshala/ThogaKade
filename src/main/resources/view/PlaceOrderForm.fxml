@@ -187,7 +187,7 @@
                         <Font name="Leelawadee UI Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label fx:id="txtOrderId" blendMode="SCREEN" layoutX="19.0" layoutY="9.0" textFill="WHITE">
+                  <Label fx:id="lblOrderId" blendMode="SCREEN" layoutX="91.0" layoutY="9.0" textFill="WHITE">
                      <font>
                         <Font name="Leelawadee UI Bold" size="14.0" />
                      </font>

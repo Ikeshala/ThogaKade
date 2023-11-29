@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Implemented the 'Add to Cart' section, displaying the total amount. Users can now delete items by pressing the delete button, and the total amount will decrease accordingly. Additionally, made a few changes to the UIs.">
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Enhance stock validation in 'Add to Cart' to inform users of insufficient stock in the database and total quantity. Display error messages showing available stock and remaining quantity after considering items already added to the cart.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/OrderDetailsDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ItemsForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ItemsForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/OrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/OrderDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/OrderModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/OrderModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/impl/OrderModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/impl/OrderModelImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/PlaceOrderForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/PlaceOrderForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +71,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="dto" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\images" />
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\view" />
@@ -148,7 +154,7 @@
       <workItem from="1701158558580" duration="9725000" />
       <workItem from="1701230145920" duration="19063000" />
       <workItem from="1701263831177" duration="2642000" />
-      <workItem from="1701267209075" duration="1889000" />
+      <workItem from="1701267209075" duration="5548000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -278,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701256243067</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Enhance stock validation in 'Add to Cart' to inform users of insufficient stock in the database and total quantity. Display error messages showing available stock and remaining quantity after considering items already added to the cart.">
+      <option name="closed" value="true" />
+      <created>1701269605650</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701269605650</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +324,7 @@
     <MESSAGE value="Implemented a case-insensitive search function for both customers and items." />
     <MESSAGE value="Implemented loading of item codes and customer IDs into combo boxes. Automatically fetches customer names corresponding to customer IDs and item descriptions along with unit prices relevant to item codes." />
     <MESSAGE value="Implemented the 'Add to Cart' section, displaying the total amount. Users can now delete items by pressing the delete button, and the total amount will decrease accordingly. Additionally, made a few changes to the UIs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented the 'Add to Cart' section, displaying the total amount. Users can now delete items by pressing the delete button, and the total amount will decrease accordingly. Additionally, made a few changes to the UIs." />
+    <MESSAGE value="Enhance stock validation in 'Add to Cart' to inform users of insufficient stock in the database and total quantity. Display error messages showing available stock and remaining quantity after considering items already added to the cart." />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhance stock validation in 'Add to Cart' to inform users of insufficient stock in the database and total quantity. Display error messages showing available stock and remaining quantity after considering items already added to the cart." />
   </component>
 </project>
