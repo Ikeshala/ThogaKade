@@ -4,6 +4,7 @@ import com.jfoenix.controls.*;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import dto.CustomersDto;
 import dto.ItemsDto;
+import dto.OrderDetailsDto;
 import dto.OrderDto;
 import dto.tm.OrderTm;
 import javafx.collections.FXCollections;
@@ -33,6 +34,9 @@ import model.impl.OrderModelImpl;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PlaceOrderFormController {
@@ -253,9 +257,45 @@ public class PlaceOrderFormController {
 
     @FXML
     void PlaceOrderButtonOnAction(ActionEvent event) {
-        if (!tmList.isEmpty()){
-          //  orderModel.saveOrder()
+        List<OrderDetailsDto> list = new ArrayList<>();
+        for (OrderTm tm:tmList) {
+            list.add(new OrderDetailsDto(
+                    lblOrderId.getText(),
+                    tm.getCode(),
+                    tm.getQuantity(),
+                    tm.getAmount()/ tm.getQuantity()
+            ));
+
+        }
+        boolean isSaved = false;
+        try {
+            isSaved = orderModel.saveOrder(new OrderDto(
+                    lblOrderId.getText(),
+                    LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")),
+                    cmbCustomerID.getValue().toString(),
+                    list
+            ));
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        if (isSaved){
+            new Alert(Alert.AlertType.INFORMATION,"Order Saved!").show();
+            clearFields();
+            
+        }else {
+            new Alert(Alert.AlertType.ERROR,"Something went wrong!").show();
         }
     }
 
+    private void clearFields() {
+        cmbCustomerID.getSelectionModel().clearSelection();
+        txtCustomerName.clear();
+        cmbItemCode.getSelectionModel().clearSelection();
+        txtItemDescription.clear();
+        txtUnitPrice.clear();
+        txtBuyingQuantity.clear();
+        tblOrders.getRoot().getChildren().clear();
+        lblTotal.setText("0.00");
+        generateId();
+    }
 }
