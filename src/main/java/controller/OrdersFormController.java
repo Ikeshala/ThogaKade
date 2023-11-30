@@ -28,19 +28,22 @@ public class OrdersFormController {
     private JFXTreeTableView<?> tblOrders;
 
     @FXML
-    private TreeTableColumn<?, ?> colItemCode;
+    private TreeTableColumn colOrderId;
 
     @FXML
-    private TreeTableColumn<?, ?> colItemDescription;
+    private TreeTableColumn colDate;
 
     @FXML
-    private TreeTableColumn<?, ?> colUnitPrice;
+    private TreeTableColumn colCustomerId;
 
     @FXML
-    private TreeTableColumn<?, ?> colQuantity;
+    private TreeTableColumn colCustomerName;
 
     @FXML
-    private TreeTableColumn<?, ?> colOption;
+    private TreeTableColumn colTotal;
+
+    @FXML
+    private TreeTableColumn colOption;
 
     @FXML
     private JFXTextField txtSearchOrder;
@@ -49,19 +52,22 @@ public class OrdersFormController {
     private JFXTreeTableView<?> tblOrderDetails;
 
     @FXML
-    private TreeTableColumn<?, ?> colItemCode1;
+    private TreeTableColumn colOrderIdDetailTable;
 
     @FXML
-    private TreeTableColumn<?, ?> colItemDescription1;
+    private TreeTableColumn colItemCode;
 
     @FXML
-    private TreeTableColumn<?, ?> colUnitPrice1;
+    private TreeTableColumn colDescription;
 
     @FXML
-    private TreeTableColumn<?, ?> colQuantity1;
+    private TreeTableColumn colQuantity;
 
     @FXML
-    private TreeTableColumn<?, ?> colOption1;
+    private TreeTableColumn colUnitPrice;
+
+    @FXML
+    private TreeTableColumn colAmount;
 
     @FXML
     void BackButtonOnAction(ActionEvent event) {
@@ -76,7 +82,15 @@ public class OrdersFormController {
 
     @FXML
     void RefreshButtonOnAction(ActionEvent event) {
+        loadOrdersTable();
+        tblOrders.refresh();
+        clearFields();
+    }
 
+    private void clearFields() {
+    }
+
+    private void loadOrdersTable() {
     }
 
 }

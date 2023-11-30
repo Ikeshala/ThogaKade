@@ -15,11 +15,4 @@ public class ItemsTm extends RecursiveTreeObject<ItemsTm> {
     private double unitPrice;
     private int quantity;
     private JFXButton btn;
-
-    public ItemsTm(String code, String description, double unitPrice, int quantity) {
-        this.code = code;
-        this.description = description;
-        this.unitPrice = unitPrice;
-        this.quantity = quantity;
-    }
 }
