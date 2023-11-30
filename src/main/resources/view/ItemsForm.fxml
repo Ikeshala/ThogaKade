@@ -24,7 +24,7 @@
             <Image url="@../images/img_13.png" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="48.0" layoutY="37.0" opacity="0.82" prefHeight="545.0" prefWidth="832.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-background-radius: 5;">
+      <AnchorPane layoutX="48.0" layoutY="43.0" opacity="0.82" prefHeight="545.0" prefWidth="832.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-background-radius: 5;">
          <children>
             <AnchorPane blendMode="HARD_LIGHT" prefHeight="60.0" prefWidth="832.0" style="-fx-background-color: #043800; -fx-background-radius: 5;">
                <children>

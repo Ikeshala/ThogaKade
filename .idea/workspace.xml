@@ -4,14 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Implemented the generation of order IDs.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/OrderDetailsModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/impl/OrderDetailsModelImpl.java" afterDir="false" />
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Implemented the 'Place Order' section, including the transactional part. Additionally, implemented the 'clearFields' method.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrdersFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/AdobeStock_431788540_Video_HD_Preview.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/abc-transformed (1).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/abcde.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/ezgif.com-webp-to-jpg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_49.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_51.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_53.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_54.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_55-transformed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_55.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_58.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_59.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_61.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_62.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_63.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_65.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/img_66.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/vecteezy_autumn-and-coffee-concept_2054792.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/vecteezy_fruit-and-veggie-juice_2037752.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/OrdersForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/OrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/OrderDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/OrderModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/OrderModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/impl/OrderModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/impl/OrderModelImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DashboardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/DashboardForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/DashboardForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,33 +67,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/resources/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_directory_selection": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/java",
+    "last_opened_file_path": "D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/resources/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dto" />
@@ -155,7 +179,7 @@
       <workItem from="1701230145920" duration="19063000" />
       <workItem from="1701263831177" duration="2642000" />
       <workItem from="1701267209075" duration="9079000" />
-      <workItem from="1701317760150" duration="5666000" />
+      <workItem from="1701317760150" duration="19976000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -301,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701274421721</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Implemented the 'Place Order' section, including the transactional part. Additionally, implemented the 'clearFields' method.">
+      <option name="closed" value="true" />
+      <created>1701326246146</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1701326246146</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +367,7 @@
     <MESSAGE value="Implemented the 'Add to Cart' section, displaying the total amount. Users can now delete items by pressing the delete button, and the total amount will decrease accordingly. Additionally, made a few changes to the UIs." />
     <MESSAGE value="Enhance stock validation in 'Add to Cart' to inform users of insufficient stock in the database and total quantity. Display error messages showing available stock and remaining quantity after considering items already added to the cart." />
     <MESSAGE value="Implemented the generation of order IDs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented the generation of order IDs." />
+    <MESSAGE value="Implemented the 'Place Order' section, including the transactional part. Additionally, implemented the 'clearFields' method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented the 'Place Order' section, including the transactional part. Additionally, implemented the 'clearFields' method." />
   </component>
 </project>

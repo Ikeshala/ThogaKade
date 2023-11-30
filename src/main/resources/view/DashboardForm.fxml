@@ -6,16 +6,18 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="545.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+<AnchorPane prefHeight="619.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
    <children>
-      <ImageView fx:id="pane" fitHeight="556.0" fitWidth="823.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="pane" fitHeight="619.0" fitWidth="952.0" layoutX="-1.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/img_13.png" />
+            <Image url="@../images/abcde.jpeg" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="42.0" layoutY="46.0" opacity="0.75" prefHeight="457.0" prefWidth="739.0" style="-fx-background-color: BLACK; -fx-background-radius: 10;">
+      <AnchorPane layoutX="94.0" layoutY="81.0" opacity="0.8" prefHeight="457.0" prefWidth="739.0" style="-fx-background-color: BLACK; -fx-background-radius: 10;">
          <children>
             <AnchorPane blendMode="HARD_LIGHT" prefHeight="60.0" prefWidth="739.0" style="-fx-background-color: #4A403A; -fx-background-radius: 10;">
                <children>
@@ -24,19 +26,19 @@
                         <Font name="Showcard Gothic" size="30.0" />
                      </font>
                   </Label>
-                  <ImageView blendMode="ADD" fitHeight="50.0" fitWidth="40.0" layoutX="685.0" layoutY="13.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                  <ImageView blendMode="ADD" fitHeight="50.0" fitWidth="40.0" layoutX="685.0" layoutY="10.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/img_8.png" />
+                        <Image url="@../images/img_62.png" />
                      </image>
                   </ImageView>
-                  <ImageView blendMode="ADD" fitHeight="50.0" fitWidth="40.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView blendMode="ADD" fitHeight="50.0" fitWidth="40.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../images/img_33.png" />
+                        <Image url="@../images/img_65.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <JFXButton fx:id="btnCustomers" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="91.0" onAction="#CustomersButtonOnAction" prefHeight="55.0" prefWidth="206.0" ripplerFill="#6b240c" style="-fx-border-color: #A9A9A9; -fx-border-radius: 10; -fx-background-color: BLACK;" text="Customers" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="btnCustomers" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="91.0" onAction="#CustomersButtonOnAction" prefHeight="55.0" prefWidth="206.0" style="-fx-border-color: #A9A9A9; -fx-border-radius: 20; -fx-background-color: BLACK;" text="Customers" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Leelawadee UI Bold" size="24.0" />
                </font>
@@ -50,8 +52,16 @@
                <effect>
                   <ColorAdjust brightness="-1.0" contrast="1.0" hue="-1.0" saturation="-1.0" />
                </effect>
+               <ripplerFill>
+                  <RadialGradient centerX="0.9388888888888889" centerY="0.042857142857142844" cycleMethod="REFLECT" focusAngle="135.0" focusDistance="0.5348837209302326" radius="0.23255813953488375">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#164863" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
             </JFXButton>
-            <JFXButton fx:id="btnOrders" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="245.0" onAction="#OrdersButtonOnAction" prefHeight="55.0" prefWidth="206.0" ripplerFill="#005b41" style="-fx-border-color: #A9A9A9; -fx-border-radius: 10; -fx-background-color: BLACK;" text="Orders" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="btnOrders" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="245.0" onAction="#OrdersButtonOnAction" prefHeight="55.0" prefWidth="206.0" style="-fx-border-color: #A9A9A9; -fx-border-radius: 20; -fx-background-color: BLACK;" text="Orders" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Leelawadee UI Bold" size="24.0" />
                </font>
@@ -65,8 +75,16 @@
                <effect>
                   <ColorAdjust brightness="-1.0" contrast="1.0" hue="-1.0" saturation="-1.0" />
                </effect>
+               <ripplerFill>
+                  <RadialGradient centerX="0.9388888888888889" centerY="0.042857142857142844" cycleMethod="REFLECT" focusAngle="135.0" focusDistance="0.5348837209302326" radius="0.23255813953488375">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#aa530e" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
             </JFXButton>
-            <JFXButton fx:id="btnItems" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="169.0" onAction="#ItemsButtonOnAction" prefHeight="55.0" prefWidth="206.0" ripplerFill="#cd113b" style="-fx-border-color: #A9A9A9; -fx-border-radius: 10; -fx-background-color: BLACK;" text="Items" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="btnItems" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="169.0" onAction="#ItemsButtonOnAction" prefHeight="55.0" prefWidth="206.0" style="-fx-border-color: #A9A9A9; -fx-border-radius: 20; -fx-background-color: BLACK;" text="Items" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Leelawadee UI Bold" size="24.0" />
                </font>
@@ -80,8 +98,16 @@
                <effect>
                   <ColorAdjust brightness="-1.0" contrast="1.0" hue="-1.0" saturation="-1.0" />
                </effect>
+               <ripplerFill>
+                  <RadialGradient centerX="0.9388888888888889" centerY="0.042857142857142844" cycleMethod="REFLECT" focusAngle="135.0" focusDistance="0.5348837209302326" radius="0.23255813953488375">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#043800" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
             </JFXButton>
-            <JFXButton fx:id="btnPlaceOrder" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="324.0" onAction="#PlaceOrderButtonOnAction" prefHeight="55.0" prefWidth="206.0" ripplerFill="#164863" style="-fx-border-radius: 10; -fx-border-color: #A9A9A9; -fx-background-color: BLACK;" text="Place Order" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="btnPlaceOrder" alignment="BASELINE_LEFT" buttonType="RAISED" focusTraversable="false" layoutX="75.0" layoutY="324.0" onAction="#PlaceOrderButtonOnAction" prefHeight="55.0" prefWidth="206.0" style="-fx-border-radius: 20; -fx-border-color: #A9A9A9; -fx-background-color: BLACK;" text="Place Order" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Leelawadee UI Bold" size="24.0" />
                </font>
@@ -95,6 +121,14 @@
                <effect>
                   <ColorAdjust brightness="-1.0" contrast="1.0" hue="-1.0" saturation="-1.0" />
                </effect>
+               <ripplerFill>
+                  <RadialGradient centerX="0.9388888888888889" centerY="0.042857142857142844" cycleMethod="REFLECT" focusAngle="135.0" focusDistance="0.5348837209302326" radius="0.23255813953488375">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#820f0f" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
             </JFXButton>
             <Label fx:id="lblDate" layoutX="97.0" layoutY="420.0" textFill="WHITE">
                <font>
@@ -146,7 +180,7 @@
                   <Image url="@../images/img_43.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="99.0" fitWidth="100.0" layoutX="353.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="99.0" fitWidth="100.0" layoutX="353.0" layoutY="162.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/img_41.png" />
                </image>
