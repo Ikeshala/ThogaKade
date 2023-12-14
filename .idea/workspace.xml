@@ -4,25 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Implemented the Orders UI and made a few modifications to other UIs.">
-      <change afterPath="$PROJECT_DIR$/ui_images/1.0 customers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_images/1.0 dashboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_images/1.0 items.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_images/1.0 orders.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_images/1.0 place_order.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_images/1.1 customers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_images/1.1 dashboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_images/1.1 items.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_images/1.1 place_order.png" afterDir="false" />
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Updated UI design images to version 1.1 in the 'ui_images' directory for future reference and use.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/tm/CartTm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/tm/OrderDetailsTm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrdersFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OrdersFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/tm/CustomerTm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/tm/CustomerTm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/tm/ItemsTm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/tm/ItemsTm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/OrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/OrderDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/tm/OrderTm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/tm/OrderTm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/OrdersForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/OrdersForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui_images/customers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui_images/dashboard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui_images/items.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui_images/place_order.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +54,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ICM104/9. Standalone Application Development/WORKING/ThogaKade/src/main/resources/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ikesh/Downloads/thogakade-javafx-mvc-icm102103-master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -88,6 +79,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\images" />
       <recent name="D:\ICM104\9. Standalone Application Development\WORKING\ThogaKade\src\main\resources\view" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dto.tm" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -167,7 +161,11 @@
       <workItem from="1701263831177" duration="2642000" />
       <workItem from="1701267209075" duration="9079000" />
       <workItem from="1701317760150" duration="21134000" />
-      <workItem from="1701360309273" duration="2497000" />
+      <workItem from="1701360309273" duration="5726000" />
+      <workItem from="1701666756524" duration="615000" />
+      <workItem from="1701854906709" duration="71000" />
+      <workItem from="1702558072759" duration="17465000" />
+      <workItem from="1702581911666" duration="655000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -329,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701353359036</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Updated UI design images to version 1.1 in the 'ui_images' directory for future reference and use.">
+      <option name="closed" value="true" />
+      <created>1701363349031</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1701363349031</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,6 +371,7 @@
     <MESSAGE value="Implemented the generation of order IDs." />
     <MESSAGE value="Implemented the 'Place Order' section, including the transactional part. Additionally, implemented the 'clearFields' method." />
     <MESSAGE value="Implemented the Orders UI and made a few modifications to other UIs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented the Orders UI and made a few modifications to other UIs." />
+    <MESSAGE value="Updated UI design images to version 1.1 in the 'ui_images' directory for future reference and use." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated UI design images to version 1.1 in the 'ui_images' directory for future reference and use." />
   </component>
 </project>
