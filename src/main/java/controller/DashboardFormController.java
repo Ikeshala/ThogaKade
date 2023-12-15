@@ -38,6 +38,7 @@ public class DashboardFormController {
 
     @FXML
     private Label lblTime;
+
     public void initialize() {
         // Display current date
         LocalDate currentDate = LocalDate.now();

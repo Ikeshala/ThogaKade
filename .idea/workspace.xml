@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Updated UI design images to version 1.1 in the 'ui_images' directory for future reference and use.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/tm/CartTm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/tm/OrderDetailsTm.java" afterDir="false" />
+    <list default="true" id="911d3d08-a1e4-4e0b-8c74-54cea0b7a7c9" name="Changes" comment="Fully implemented and finalized the main functions of the ThogaKade POS System. (UIs)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrdersFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/OrdersFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PlaceOrderFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/OrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/OrderDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/tm/OrderTm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/tm/OrderTm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/OrdersForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/OrdersForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DashboardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DashboardFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_images/1.2 customers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_images/1.2 dashboard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_images/1.2 items.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_images/1.2 orders.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_images/1.2 place_order.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -64,6 +68,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -165,7 +170,12 @@
       <workItem from="1701666756524" duration="615000" />
       <workItem from="1701854906709" duration="71000" />
       <workItem from="1702558072759" duration="17465000" />
-      <workItem from="1702581911666" duration="655000" />
+      <workItem from="1702581911666" duration="3901000" />
+      <workItem from="1702586418481" duration="95000" />
+      <workItem from="1702586618411" duration="746000" />
+      <workItem from="1702587382085" duration="328000" />
+      <workItem from="1702587728048" duration="341000" />
+      <workItem from="1702618876111" duration="622000" />
     </task>
     <task id="LOCAL-00001" summary="Completed UIs for Dashboard, Customers and Items.">
       <option name="closed" value="true" />
@@ -335,7 +345,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701363349031</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fully implemented and finalized the main functions of the ThogaKade POS System.">
+      <option name="closed" value="true" />
+      <created>1702582831247</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1702582831248</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fully implemented and finalized the main functions of the ThogaKade POS System. (UIs)">
+      <option name="closed" value="true" />
+      <created>1702582879582</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1702582879582</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,6 +398,12 @@
     <MESSAGE value="Implemented the 'Place Order' section, including the transactional part. Additionally, implemented the 'clearFields' method." />
     <MESSAGE value="Implemented the Orders UI and made a few modifications to other UIs." />
     <MESSAGE value="Updated UI design images to version 1.1 in the 'ui_images' directory for future reference and use." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated UI design images to version 1.1 in the 'ui_images' directory for future reference and use." />
+    <MESSAGE value="Fully implemented and finalized the main functions of the ThogaKade POS System." />
+    <MESSAGE value="Fully implemented and finalized the main functions of the ThogaKade POS System. (UIs)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fully implemented and finalized the main functions of the ThogaKade POS System. (UIs)" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
